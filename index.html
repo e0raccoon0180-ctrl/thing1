@@ -1,10 +1,22 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ur_gay</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thing1</title>
 </head>
 <body>
-   <img src="pride.webp" alt="Description of image">
+  <button id="showImageBtn">Click</button>
+  <div id="imageContainer">
+    <img id="mainImage" src="rac.webp" alt="Raccoon Image" style="width:150px; height:150px;">
+  </div>
+
+  <script>
+    document.getElementById('showImageBtn').addEventListener('click', function () {
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = 'pride.webp';
+      mainImage.alt = 'e';
+    });
+  </script>
 </body>
 </html>
